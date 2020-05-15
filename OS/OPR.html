@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Optimal Page Replacement Algorithm</title>
+	<h1>Optimal Page Replacement</h1>
+	<script src="opr.js"></script>
+
+	<style type="text/css">
+		body
+		{
+			text-align: center;
+			margin-top: 60px;
+
+			background: url("opr.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		button
+		{
+			color: white;
+			background-color: black; 
+
+			padding: 12px 28px;
+			font-size: 24px;
+
+			border: 1px white;
+			border-radius: 12px;
+
+			text-decoration: none;
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+			transition: 0.5s;
+
+			box-shadow: 0 9px #999;
+
+			text-decoration: none;
+		}
+
+		button:hover
+		{
+			border: 1px solid black;
+			color : black;
+			background-color: white;
+		}
+
+		h1
+		{
+			border-bottom: 3px solid black;
+			margin-bottom: 30px;
+		}
+
+		form
+		{
+			height: 50%;
+			width: 50%;
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			border: 3px solid black;
+			border-radius: 12px;
+		}
+
+		form:hover
+		{
+			box-shadow: 0px 0px 40px 16px;
+		}
+
+		table
+		{
+			width: 100%;
+		}
+
+		[type=text]
+		{
+			width: 80%;
+			background: transparent;
+
+			overflow: hidden;
+			padding: 8px 0;
+			margin: 8px 0;
+
+			border: none;
+			border-bottom: 2px solid black;
+
+			box shadow: 0 4px 10px 4px rgba(19,35,47,0.3);
+		}
+		[type=number]
+		{
+			width: 80%;
+			background: transparent;
+
+			overflow: hidden;
+			padding: 8px 0;
+			margin: 8px 0;
+
+			border: none;
+			border-bottom: 2px solid black;
+
+			box shadow: 0 4px 10px 4px rgba(19,35,47,0.3);
+		}
+	</style>
+
+</head>
+<body>
+	<form>
+
+		<label><h3>Enter maximum Cache Size</h3></label> <br><br>
+		<input type="Number" id="cache-size" required> <br><br>
+
+		<label><h3>Enter No of Page Request</h3></label> <br><br>
+		<input type="text" id="n" required> <br><br>
+		<button onclick="OPR()">Submit</button> <br><br>
+	</form>
+
+	<div name="printit">7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1</div><br>
+</body>
+</html>
